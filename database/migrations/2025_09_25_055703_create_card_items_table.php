@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('card_items', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class, 'user_id');
-            $table->foreignIdFor('product_id')->references('id')->on('products');
+            $table->foreignId('product_id')->references('id')->on('products');
             $table->integer('quantity');
             $table->timestamps();
         });
