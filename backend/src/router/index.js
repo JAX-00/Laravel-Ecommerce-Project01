@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import Login from "../views/Login.vue";
 import RequestPassword from "../views/Request-password.vue";
+import Token from "../views/Token.vue";
 
 const routes = [
     {
@@ -18,6 +19,12 @@ const routes = [
         path: "/request-password",
         name: "request-password",
         component: RequestPassword,
+    },
+    {
+        path: "/request-password/:token",
+        name: "token",
+        component: Token,
+        props: true,
     },
 ];
 
