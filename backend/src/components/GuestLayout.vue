@@ -9,6 +9,7 @@
 
     <!-- Konten Slot: Form akan ditampilkan di sini -->
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <!--  -->
       <slot></slot>
     </div>
 
